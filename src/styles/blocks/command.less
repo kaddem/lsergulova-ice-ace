@@ -1,0 +1,52 @@
+ .command {
+    margin-bottom: 85px;
+    text-align: center;
+
+    &__caption {
+      letter-spacing: 1px;
+      margin-bottom: 45px;
+    }
+
+    &__description {
+      width: 757px;
+      margin: 0 auto;
+      margin-top: -190px;
+      letter-spacing: 1px;
+    }
+
+    &__link {
+      display: inline-block;
+      margin-top: 65px;
+    }
+
+    &__img-tablet {
+      display: none;
+    }
+ }
+
+ @media (max-width: 768px) {
+    .command {
+      margin-bottom: 65px;
+
+      &__caption {
+        margin-bottom: 20px;
+      }
+
+      &__link {
+        margin-top: 20px;
+      }
+
+      &__img {
+        display: none;
+      }
+
+      &__img-tablet {
+        display: block;
+      }
+
+      &__description {
+        width: 585px;
+        margin-top: -170px;
+      }
+    }
+ }

@@ -1,0 +1,74 @@
+.promo {
+  min-height: 645px;
+  background-color: #000000;
+  color: #ffffff;
+  background-image: url("../img/promo.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  &__wrapper {
+    width: 460px;
+  }
+
+  &__tablet-logo {
+    display: none;
+  }
+}
+
+.promo__caption {
+  font-size: 50px;
+  line-height: 50px;
+
+  padding-top: 105px;
+}
+
+.promo__fonts {
+    font-family: "Futura PT Demi", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 40px;
+
+    display: block;
+    padding-top: 32px;
+  }
+
+  @media (max-width: 768px) {
+    .promo {
+      width: 100%;
+      min-height: 420px;
+
+      &__tablet-logo {
+        display: block;
+        padding: 15px;
+      }
+
+      &__container {
+        width: 740px;
+        margin: 0 auto;
+      }
+
+      &__wrapper {
+        width: 230px;
+        padding-top: 0;
+        margin-left: 90px;
+      }
+
+      &__caption {
+        font-family: "Futura PT", Arial, sans-serif;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 24px;
+        letter-spacing: 1px;
+
+        margin-top: -45px;
+        margin-bottom: 0;
+      }
+
+      &__fonts {
+        font-size: 20px;
+        letter-spacing: 1px;
+
+        padding-top: 5px;
+      }
+    }
+  }
