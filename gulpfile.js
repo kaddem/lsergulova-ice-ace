@@ -22,7 +22,8 @@ const path = {
     watch: {
         srcStyle   : 'src/styles/**/*.less',
         buildStyle : 'www/style/*.css',
-        html       : 'www/*.html'
+        html       : 'www/*.html',
+        scripts    : 'www/scripts/*.js'
     }
 }
 
@@ -55,5 +56,5 @@ gulp.task('serve', ['less'], function() {
     });
 
     gulp.watch(path.watch.srcStyle, ['less']);
-    gulp.watch([path.watch.html, path.watch.buildStyle]).on('change', browserSync.reload);
+    gulp.watch([path.watch.html, path.watch.buildStyle, path.watch.scripts]).on('change', browserSync.reload);
 });

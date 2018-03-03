@@ -16,7 +16,9 @@
     "url": "https://github.com/kaddem/student-startpack/issues"
   },
   "homepage": "https://github.com/kaddem/student-startpack#readme",
-  "dependencies": {},
+  "dependencies": {
+    "npm": "^5.7.1"
+  },
   "devDependencies": {
     "browser-sync": "^2.23.6",
     "css-mqpacker": "^6.0.2",
