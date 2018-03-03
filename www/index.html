@@ -2,60 +2,81 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>Ice Ace</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
-<div class="promo">
-  <div class="container">
-    <div class="promo__tablet-logo">
-      <img src="img/logo-tablet.png" alt="Логотип">
-    </div>
-    <div class="promo__wrapper">
-      <h1 class="promo__caption">Школа сноуборда и горных лыж<br></h1>
-      <span class="promo__fonts">в Санкт-Петербурге</span>
+  <div class="promo">
+    <div class="container">
+      <div class="promo__wrapper">
+        <h1 class="promo__caption">Школа сноуборда и горных лыж<br></h1>
+        <span class="promo__fonts">в Санкт-Петербурге</span>
+      </div>
     </div>
   </div>
-</div>
 
-
-<header class="page-header">
+  <header class="page-header">
 	<div class="page-header__wrapper container">
 
-    <div class="page-header__logo-img">
-      <img src="img/logo.png" alt="Логотип Ice Ace" class="logo_img">
+      <div class="page-header__mobile-logo">
+        <img src="img/logo-tablet.png" alt="Логотип">
+      </div>
+      <div class="page-header__desktop-logo">
+        <img src="img/logo.png" alt="Логотип Ice Ace" class="logo_img">
+      </div>
+
+
+      <div class="page-header__dropdown">
+
+        <nav class="page-header__main-nav">
+          <ul class="page-header__list site-list">
+            <li class="site-list__item">
+              <a href="schedule.html" class="site-list__link">Расписание</a>
+            </li>
+            <li class="site-list__item">
+              <a href="instructor.html" class="site-list__link">Инструкторы</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#" class="site-list__link">Стоимость</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#" class="site-list__link">Как добраться</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="social social--header">
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--inst" href="#"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--fb" href="#"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="#"></a>
+          </li>
+        </ul>
+
+        <div class="contacts-main">
+          <a href="tel:88008008080" class="contacts-main__link contacts-main__link--phone">8 (800) 800 80 80</a>
+          <a href="mailto:hello@iceace.com" class="contacts-main__link contacts-main__link--main">hello@iceace.com</a>
+        </div>
+
+        <a href="#" class="btn btn--bd-white">Записаться</a>
+      </div>
+
+      <button class="burger">
+        <span></span>
+      </button>
+
     </div>
-
-    <nav class="page-header__main-nav">
-      <ul class="page-header__list site-list">
-        <li class="site-list__item">
-          <a href="schedule.html" class="site-list__link">Расписание</a>
-        </li>
-        <li class="site-list__item">
-          <a href="instructor.html" class="site-list__link">Инструкторы</a>
-        </li>
-        <li class="site-list__item">
-          <a href="#" class="site-list__link">Стоимость</a>
-        </li>
-        <li class="site-list__item">
-          <a href="#" class="site-list__link">Как добраться</a>
-        </li>
-      </ul>
-    </nav>
-
-    <ul class="main-nav__list user-list">
-      <li class="user-list__item">
-        <a href="tel:88008008080" class="user-list__phone">8 (800) 800 80 80</a>
-      </li>
-      <li class="user-list__item">
-        <a href="#" class="user-list__enroll btn">Записаться</a>
-      </li>
-    </ul>
-
-  </div>
-</header>
+  </header>
 
 <main class="page-main">
 
@@ -66,7 +87,7 @@
 
       <div class="services__content">
 
-        <artvisicle class="visitation">
+        <article class="visitation">
           <div class="visitation__photo">
             <img src="img/visitation.jpg" alt="Горноложный курорт" class="visitation__img">
           </div>
@@ -187,8 +208,6 @@
       <h2 class="contacts__caption">Сообщество</h2>
       <p class="contacts__description"><span class="contacts__uppercase">Ice Ace</span> - не только школа, а целое комьюнити вдохновленных снегом и горами людей, мы без ума от сноуборда и горных лыж и часто делимся важными событиями в социальных сетях, следите за нами на канале Youtube и в Instagram или приходи к нам, мы все расскажем.</p>
       <div class="contacts__map">
-        <img src="img/map.jpg" alt="Карта" class="contacts__img">
-        <img src="img/map-tablet.jpg" alt="Карта" class="contacts__img-tablet">
       </div>
     </div>
   </section>
@@ -225,23 +244,23 @@
       <div class="footer__logo">
         <img src="img/logo.png" alt="Логотип" class="footer__logo-img">
       </div>
-      <ul class="footer__social">
-        <li class="footer__social-list">
-          <a href="#"><img src="img/youtube.png" class="footer__icon" alt="Ютуб"></a>
+      <ul class="social social--footer">
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="#"></a>
         </li>
-        <li class="footer__social-list">
-          <a href="#"><img src="img/instagram.png" class="footer__icon" alt="Инстаграм"></a>
+        <li class="social__item">
+          <a class="social__link social__link--inst" href="#"></a>
         </li>
-        <li class="footer__social-list">
-          <a href="#"><img src="img/facebook.png" class="footer__icon-facebook" alt="Фэйсбук"></a>
+        <li class="social__item">
+          <a class="social__link social__link--fb" href="#"></a>
         </li>
-        <li class="footer__social-list">
-          <a href="#"><img src="img/vk.png" class="footer__icon-vk" alt="Вконтакте"></a>
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="#"></a>
         </li>
       </ul>
-      <div class="footer__phone">
-        <a href="tel:88008008080" class="footer__phone-link">8 (800) 800 80 80</a>
-        <p class="footer__mail">hello@iceace.com</p>
+      <div class="contacts-main">
+        <a href="tel:88008008080" class="contacts-main__link contacts-main__link--phone">8 (800) 800 80 80</a>
+        <a href="mailto:hello@iceace.com" class="contacts-main__link contacts-main__link--main">hello@iceace.com</a>
       </div>
     </div>
     <div class="footer__bottom">

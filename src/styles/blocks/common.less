@@ -7,7 +7,6 @@ body {
   color: #111111;
   font-size: 15px;
   line-height: 22px;
-
   background-color: #ffffff;
 }
 
@@ -21,12 +20,15 @@ h1 {
 h2 {
   font-family: "Futura PT Demi", Arial, sans-serif;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 24px;
   letter-spacing: 1px;
-
   text-align: center;
   margin: 0;
   padding: 0;
+
+  @media (min-width: @media-tablet) {
+    font-size: 40px;
+  }
 }
 
 h3 {
@@ -57,17 +59,16 @@ a {
 }
 
 .container {
-  width: 1160px;
-  margin: 0 auto;
+  @media (min-width: @media-desktop) {
+    width: 1160px;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 768px) {
-  body {
-    width: 768px;
-  }
 
   h2 {
-    font-size: 24px;
+
   }
 
   .container {
